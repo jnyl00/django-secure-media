@@ -1,0 +1,18 @@
+[project]
+name = "django-secure-media"
+version = "0.1.0"
+description = "A simple secure Media access system for Django"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "django==4.2.25",
+]
+
+[project.optional-dependencies]
+docs = [
+    "mkdocs-material==9.6.23",
+]
+
+[build-system]
+requires = ["uv_build>=0.9.6,<0.10.0"]
+build-backend = "uv_build"

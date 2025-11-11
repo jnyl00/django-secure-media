@@ -1,0 +1,93 @@
+# ====================================
+# General
+# ====================================
+__pycache__/
+*.py[cod]
+*.so
+*.log
+*.pot
+*.mo
+*.swp
+*.swo
+*.DS_Store
+*.env
+.env
+.venv/
+venv/
+env/
+build/
+dist/
+*.egg-info/
+*.egg
+*.sqlite3
+
+# ====================================
+# Django
+# ====================================
+# Local settings and secret files
+local_settings.py
+settings_local.py
+db.sqlite3
+
+# Django static and media files
+staticfiles/
+media/
+static/
+
+# ====================================
+# VS Code
+# ====================================
+.vscode/
+.history/
+.code-workspace
+
+# ====================================
+# Pytest
+# ====================================
+.pytest_cache/
+.cache/
+.coverage
+coverage.xml
+htmlcov/
+nosetests.xml
+junit.xml
+
+# ====================================
+# Tox
+# ====================================
+.tox/
+.tox*
+.log/
+
+# ====================================
+# MkDocs
+# ====================================
+/site/
+mkdocs_build/
+*.bak
+
+# ====================================
+# Migrations
+# */migrations/*.py
+# !*/migrations/__init__.py
+
+# ====================================
+# uv (Astral)
+# ====================================
+# uv creates lock and build metadata
+.uv/
+.uv_cache/
+uv.lock
+
+# ====================================
+# Other
+# ====================================
+# Temporary or backup files
+*.tmp
+*.temp
+*~
+
+# IDEs / Editors
+.idea/
+.spyproject/
+.vscode/
