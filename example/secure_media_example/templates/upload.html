@@ -1,0 +1,16 @@
+{% extends "index.html" %}
+{% load static %}
+
+
+{% block head_title %}Upload{% endblock head_title %}</title>
+
+
+{% block page_title %}Upload file{% endblock page_title %}</h1>
+
+{% block content %}
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+{% endblock content %}
