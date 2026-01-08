@@ -82,5 +82,7 @@ class DefaultMediaAccessPolicyRegistry(LazyObject):
 
 
 # This global object represents the default policy registry, for the common case.
-# You can also instantiate AdminSite in your own code to create a custom admin site.
+# You can provide your own MediaAccessPolicyRegistry using the DjangoSecureMediaConfig.default_registry
+# attribute.
+# You can also instantiate MediaAccessPolicyRegistry in your own code to create a custom registry.
 registry = DefaultMediaAccessPolicyRegistry()

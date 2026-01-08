@@ -1,6 +1,9 @@
 [project]
 name = "django-secure-media"
 version = "0.1.0"
+authors = [
+  {name = "Ioannis Gialanskyi", email = "john.yalanskyi@gmail.com"},
+]
 description = "A simple secure Media access system for Django"
 readme = "README.md"
 requires-python = ">=3.11"
@@ -11,6 +14,10 @@ dependencies = [
 [project.optional-dependencies]
 docs = [
     "mkdocs-material==9.6.23",
+]
+tests = [
+    "tox>=4.32.0",
+    "tox-uv>=1.29.0",
 ]
 
 [build-system]

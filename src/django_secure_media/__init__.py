@@ -25,10 +25,10 @@ def register(media_policy: 'MediaAccessPolicy', policy_registry: Optional['Media
     registry = policy_registry or default_registry
 
     if not isinstance(registry, MediaAccessPolicyRegistry):
-        raise ValueError("site must subclass AdminSite")
+        raise ValueError("registry must subclass MediaAccessPolicyRegistry")
 
     if not isinstance(media_policy, MediaAccessPolicy):
-        raise ValueError("Wrapped class must subclass ModelAdmin.")
+        raise ValueError("Wrapped class must subclass MediaAccessPolicy.")
 
     registry.register(media_policy)
 
